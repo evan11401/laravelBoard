@@ -29,8 +29,8 @@ class boardController extends Controller
         return view("messageBoard.index", compact('messageBoards'));
     }
     public function create(){
-        $messageBoard = new MessageBoard();
-        return View('messageBoard.create',compact('messageBoard'));
+        
+        return View('messageBoard.create');
     }
     public function store(Request $request){
         
@@ -46,5 +46,8 @@ class boardController extends Controller
         $messageBoard->save();
         
         return Redirect::to('/');
+    }
+    public function delete(){
+        
     }
 }

@@ -10,7 +10,10 @@
                         </tr>
                         <tr>
                                 <th>Sex_性別</th>
-                                <td><input type="text" name="input_sex"/></td>
+                                <td>
+                                    <input type="radio" name="input_sex" value="男"/>男
+                                    <input type="radio" name="input_sex" value="女"/>女
+                                </td>
                         </tr>
                         <tr>
                                 <th>Subject_主題</th>
